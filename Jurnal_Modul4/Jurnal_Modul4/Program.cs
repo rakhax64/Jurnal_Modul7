@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace Jurnal_Modul4
 {
-    class Program
+    internal class Penjumlahan
     {
-        static void Main(string[] args)
-        {
+
+        PenjumlahanGeneric<string> penjumlahan = new PenjumlahanGeneric<string>();
+        
+        string x = "1302194084";
+        penjumlahan.JumlahAngka(x);
+
         }
+}
+public class PenjumlahanGeneric<T>
+{
+    public void JumlahAngka(T x)
+    {
+
+        Console.WriteLine("Jumlah Tiga Angka " + x);
+
     }
 }
+
